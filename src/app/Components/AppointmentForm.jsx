@@ -3,34 +3,26 @@ export default function AppointmentForm() {
     <section className="pt-16">
       <h2 className="text-3xl font-bold text-center text-emerald-600 mb-8">Book an Appointment</h2>
 
-      <form className="max-w-xl mx-auto bg-gray-100 p-8 rounded-xl shadow">
+      <form className="bg-gray-100 p-8 rounded-xl shadow">
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <input 
             type="text" 
             placeholder="Full Name" 
-            className="border p-3 rounded w-full"
+            className="border mt-2 p-3 rounded w-full"
           />
 
           <input 
             type="email" 
             placeholder="Email Address" 
-            className="border p-3 rounded w-full"
+            className="border mt-2 p-3 rounded w-full"
           />
 
           <input 
             type="tel" 
             placeholder="Phone Number" 
-            className="border p-3 rounded w-full"
+            className="border mt-2 p-3 rounded w-full"
           />
-
-          <select className="border p-3 rounded w-full">
-            <option>Select Department</option>
-            <option>Cardiology</option>
-            <option>Neurology</option>
-            <option>Orthopedics</option>
-            <option>Maternity</option>
-          </select>
         </div>
 
         <textarea

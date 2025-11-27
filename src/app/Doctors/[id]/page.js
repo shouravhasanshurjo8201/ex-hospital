@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from '@/app/Firebase/Firebase.config';
-import ServiceBookingForm from '@/app/Components/ServiceBookingForm';
 import Link from 'next/link';
+import AppointmentForm from '@/app/Components/AppointmentForm';
 
 export default function DoctorDetailsClient() {
   const params = useParams();
@@ -232,7 +232,7 @@ export default function DoctorDetailsClient() {
         </div>
       </section>
 
-      <ServiceBookingForm />
+      <AppointmentForm />
     </div>
   );
 }
