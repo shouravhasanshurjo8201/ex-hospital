@@ -1,5 +1,4 @@
 'use client';
-
 import { useState } from 'react';
 import { createUserWithEmailAndPassword, updateProfile, signInWithPopup } from 'firebase/auth';
 import { useRouter } from 'next/navigation';
@@ -23,7 +22,7 @@ export default function Signup() {
             await updateProfile(userCredential.user, { displayName: name, photoURL });
             await auth.signOut();
             router.push('/Login');
-            toast.success("Login Up Successfully");
+            toast.success("Signup Successful");
         } catch (err) {
             console.log(err);
             setError('Signup failed. Try again.');
@@ -35,14 +34,12 @@ export default function Signup() {
             const result = await signInWithPopup(auth, googleProvider);
             Cookies.set('token', result.user.uid, { expires: 1 });
             router.push('/Dashboard');
-            toast.success("Login Up Successfully");
+            toast.success("Signup Successful");
         } catch (err) {
             console.log(err);
             setError('Google login failed.');
         }
     };
-
-    
 
     return (
         <div className='flex flex-col justify-center items-center flex-1 min-h-screen'>
