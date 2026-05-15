@@ -11,12 +11,12 @@ export default function Home() {
   return (
     <div className="">
       <HeroSection></HeroSection>
-      <Services></Services>
+      {/* <Services></Services>
       <DoctorsList></DoctorsList>
       <Features></Features>
       <Gallery></Gallery>
       <Testimonials></Testimonials>
-      <FAQ></FAQ>
+      <FAQ></FAQ> */}
     </div>
   );
 }
