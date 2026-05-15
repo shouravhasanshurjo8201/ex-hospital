@@ -2,7 +2,6 @@ import { NextResponse } from 'next/server';
 
 export function proxy(request) {
   const user = request.cookies.get('token')?.value;
-
   const publicRoutes = ['/', '/About', '/Signup', '/Login'];
   const currentPath = request.nextUrl.pathname;
 
@@ -17,7 +16,6 @@ export function proxy(request) {
       new URL(`/Login?next=${currentPath}`, request.url)
     );
   }
-
   return NextResponse.next();
 }
 
