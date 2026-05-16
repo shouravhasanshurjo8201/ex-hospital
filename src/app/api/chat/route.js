@@ -1,22 +1,3 @@
-// import { NextResponse } from "next/server"
-
-// export async function POST(req) {
-//   const { message } = await req.json()
-
-//   let reply = "দুঃখিত, আমি বুঝতে পারিনি।"
-
-//   if (message.toLowerCase().includes("hello")) {
-//     reply = "হ্যালো 👋 আমি কিভাবে সাহায্য করতে পারি?"
-//   }
-
-//   if (message.toLowerCase().includes("order")) {
-//     reply = "আপনার order processing এ আছে।"
-//   }
-
-//   return NextResponse.json({ reply })
-// }
-
-
 import OpenAI from "openai"
 import { NextResponse } from "next/server"
 
