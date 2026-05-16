@@ -1,5 +1,4 @@
 'use client'
-
 import { onAuthStateChanged } from "firebase/auth";
 import { useEffect, useState } from "react";
 import { auth } from "../Firebase/Firebase.config";
