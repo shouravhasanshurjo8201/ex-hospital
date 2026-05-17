@@ -15,8 +15,8 @@ export default function Gallery() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-6">
         {images.map((img, idx) => (
           <div key={idx} className="overflow-hidden rounded-lg shadow-lg">
-            <img 
-              src={img} 
+            <img
+              src={img}
               className="w-full h-56 object-cover hover:scale-110 transition duration-300"
             />
           </div>
