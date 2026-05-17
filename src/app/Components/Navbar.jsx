@@ -1,5 +1,4 @@
 'use client'
-
 import Link from "next/link";
 import LogoutButton from "./LogoutButton";
 import { useEffect, useState } from "react";
@@ -27,7 +26,7 @@ export default function Navbar() {
     <nav className="bg-emerald-200 text-black shadow-md p-4">
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-xl font-bold">
-          <Link href="/" className='text-blue-700'><img src="/Assets/Hospital.png" alt="" className="w-22 h-12"/></Link>
+          <Link href="/" className='text-blue-700'><img src="/Assets/Hospital.png" alt="" className="w-22 h-12" /></Link>
         </div>
 
         <button
