@@ -1,5 +1,5 @@
 export default function Services() {
-     const services = [
+    const services = [
         {
             id: 1,
             title: "General Consultation",
@@ -40,7 +40,6 @@ export default function Services() {
             includes: ["Joint exam", "Injury analysis", "Pain management"],
             requirements: "Bring X-Ray if taken previously."
         },
-        
     ];
 
     return (
