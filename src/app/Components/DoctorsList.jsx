@@ -50,14 +50,11 @@ export default function DoctorsList() {
       qualifications: ["MBBS", "MS (Orthopedics)"],
       services: ["Bone Check", "Joint Pain Care", "Fracture Treatment"],
     },
-
   ];
   return (
     <section className="pt-16">
       <h2 className="text-3xl text-emerald-600 font-bold text-center mb-10">Our Expert Doctors</h2>
-
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-7xl mx-auto px-6">
-
         {doctors.map((doctor) => (
           <Link key={doctor.id}
             href={`/Doctors/${doctor.id}`}>
@@ -72,7 +69,6 @@ export default function DoctorsList() {
             </div>
           </Link>
         ))}
-
       </div>
     </section>
   );
