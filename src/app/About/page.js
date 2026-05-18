@@ -7,6 +7,7 @@ export default function About() {
     { title: "Outdoor & Indoor Services", desc: "Comfortable cabins, wards, and daily outdoor patient consultation." },
     { title: "Pharmacy & Ambulance", desc: "24/7 running pharmacy and emergency ambulance support." },
   ]
+
   return (
     <div className="">
       <div className="max-w-5xl mx-auto">
@@ -51,7 +52,6 @@ export default function About() {
           <h2 className="text-3xl font-bold text-emerald-700 mb-5 text-center">
             What We Offer
           </h2>
-
           <div className="grid md:grid-cols-3 gap-8">
             {Offer.map((item, index) => (
               <div key={index} className="bg-white p-6 shadow-md rounded-xl hover:shadow-lg transition">
