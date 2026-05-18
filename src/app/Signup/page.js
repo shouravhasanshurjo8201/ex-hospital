@@ -74,6 +74,7 @@ export default function Signup() {
                             value={photoURL}
                             onChange={(e) => setPhotoURL(e.target.value)}
                         />
+
                         <div className='relative'>
                             <input
                                 type={show ? "password" : "text"}
@@ -97,6 +98,7 @@ export default function Signup() {
                         >
                             Sign Up
                         </button>
+
                     </form>
 
                     <button
@@ -111,8 +113,7 @@ export default function Signup() {
                                 <path fill="#fbbc02" d="m90 341a208 200 0 010-171l63 49q-12 37 0 73"></path>
                                 <path fill="#ea4335" d="m153 219c22-69 116-109 179-50l55-54c-78-75-230-72-297 55"></path>
                             </g>
-                        </svg>
-                        Continue with Google
+                        </svg> Continue with Google
                     </button>
 
                     <div className='text-center'>
