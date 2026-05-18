@@ -20,7 +20,6 @@ export default function Dashboard() {
         setLoading(false);
       }
     });
-
     return () => unsubscribe();
   }, [router]);
 
@@ -63,9 +62,9 @@ export default function Dashboard() {
       <div className="bg-white shadow rounded-lg p-6">
         <h3 className="text-xl font-semibold mb-4">Recent Activity</h3>
         <ul className="space-y-2 text-gray-700">
-          <li>✅ Project "Hospital Web" deployed</li>
-          <li>⚡ User authentication updated</li>
-          <li>📝 Added new tasks to project</li>
+          <li>Project "Hospital Web" deployed</li>
+          <li>User authentication updated</li>
+          <li>Added new tasks to project</li>
         </ul>
       </div>
     </div>
